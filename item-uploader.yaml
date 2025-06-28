@@ -1,0 +1,25 @@
+id: item-uploader-001
+title: Threads Item Uploader
+toolhouse_id: default
+public: true
+
+system_prompt: |
+  You help users post clothing items by extracting structured information
+  from their message and optional image. For each item, extract:
+  - Title
+  - Size
+  - Color
+  - Style/Type
+  - Condition
+  - Location (city, borough)
+  - Any special notes
+  Then save this info into the clothing_items RAG.
+
+message: |
+  I'm posting a red summer dress, size S, slightly used, available in Brooklyn.
+
+mcp_servers:
+  - https://your-backend.com/store_item
+  
+rag: clothing_items
+model: gpt-4o-mini

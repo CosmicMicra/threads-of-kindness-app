@@ -1,0 +1,12 @@
+id: assistant-id-001
+title: Threads Assistant
+toolhouse_id: default
+public: true
+
+system_prompt: |
+  You are the AI assistant for Threads of Kindness. Help users understand how to post items, find clothes, or coordinate pickups. Answer clearly and kindly.
+
+message: "How do I post a clothing item?"
+
+model: gpt-4o-mini
+

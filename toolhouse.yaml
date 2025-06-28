@@ -1,0 +1,27 @@
+models:
+  User:
+    name: string
+    email: string
+    location: string
+    bio: text
+    profile_pic: string
+    rating: float
+
+  Item:
+    title: string
+    description: text
+    size: string
+    color: string
+    style: string
+    type: string
+    condition: string
+    location: string
+    photos: string[]
+    user: relation:User
+
+  Message:
+    sender: relation:User
+    receiver: relation:User
+    item: relation:Item
+    content: text
+    timestamp: datetime
